@@ -17,8 +17,21 @@ export const Portal = () => {
 								My UEA
 							</Button>{" "}
 							<br></br>
-							<Button variant="primary">Blackboard</Button> <br></br>
-							<Button variant="primary">eVision</Button>{" "}
+							<Button
+								variant="primary"
+								href="https://learn.uea.ac.uk/"
+								target="_blank"
+							>
+								Blackboard
+							</Button>{" "}
+							<br></br>
+							<Button
+								variant="primary"
+								href="https://evision.uea.ac.uk/"
+								target="_blank"
+							>
+								E:vision
+							</Button>{" "}
 						</Col>
 						<Col>
 							<h1>

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import { Portal } from "./Portal";
 import { Dashboard } from "./Dashboard";
@@ -6,6 +7,8 @@ import { Footer } from "./Footer";
 import "./App.css";
 
 function App() {
+	const [sidebarIsOpen, setSidebarOpen] = useState(true);
+	const toggleSidebar = () => setSidebarOpen(!sidebarIsOpen);
 	return (
 		<HashRouter basename="/">
 			<div className="App h-100">

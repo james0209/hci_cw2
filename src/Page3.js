@@ -7,11 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export const Page3 = () => {
 	return (
 		<div class="hero">
-			<div>
-				<Container className="content">
-					<h1>Page3</h1>
-				</Container>
-			</div>
+			<div></div>
 		</div>
 	);
 };

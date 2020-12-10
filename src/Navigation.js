@@ -15,22 +15,6 @@ export const Navigation = () => {
 		<nav class="hero" role="navigation">
 			<Navbar collapseOnSelect expand="lg" variant="dark">
 				<Container>
-					{/* 					<Navbar.Brand
-						className="navbar-brand  navbar-custom"
-						as={Link}
-						to="/"
-					>
-						<a
-							className=" navbar-brand navbar-custom"
-							href="/"
-							as={Link}
-							to="/"
-							title="Go to University of East Anglia"
-						>
-							My UEA
-						</a>
-					</Navbar.Brand> */}
-
 					<Navbar.Brand as={Link} to="/">
 						<img
 							alt=""
