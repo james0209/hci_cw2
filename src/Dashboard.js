@@ -1,12 +1,10 @@
-import { Container, Card, CardDeck } from "react-bootstrap";
-import { Navigation } from "./Navigation";
-import { Footer } from "./Footer";
-import { Col, Row, Button } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Card, CardDeck, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const Dashboard = () => {
 	return (
 		<div class="dashboard">
+			<h1 className="mt-4 mb-2">Dashboard</h1>
 			<div class="container">
 				<div class="row">
 					<div class="col">
@@ -16,10 +14,7 @@ export const Dashboard = () => {
 								<Card.Subtitle className="mb-2 text-muted">
 									Card Subtitle
 								</Card.Subtitle>
-								<Card.Text>
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</Card.Text>
+								<Card.Text>UEA's Learning Portal</Card.Text>
 								<Card.Link href="#">Card Link</Card.Link>
 							</Card.Body>
 						</Card>
@@ -31,10 +26,7 @@ export const Dashboard = () => {
 								<Card.Subtitle className="mb-2 text-muted">
 									Card Subtitle
 								</Card.Subtitle>
-								<Card.Text>
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</Card.Text>
+								<Card.Text>UEA's Learning Portal</Card.Text>
 								<Card.Link href="#">Card Link</Card.Link>
 							</Card.Body>
 						</Card>
@@ -47,10 +39,7 @@ export const Dashboard = () => {
 								<Card.Subtitle className="mb-2 text-muted">
 									Card Subtitle
 								</Card.Subtitle>
-								<Card.Text>
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</Card.Text>
+								<Card.Text>UEA's Learning Portal</Card.Text>
 								<Card.Link href="#">Card Link</Card.Link>
 							</Card.Body>
 						</Card>
@@ -62,10 +51,7 @@ export const Dashboard = () => {
 								<Card.Subtitle className="mb-2 text-muted">
 									Card Subtitle
 								</Card.Subtitle>
-								<Card.Text>
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</Card.Text>
+								<Card.Text>UEA's Learning Portal</Card.Text>
 								<Card.Link href="#">Card Link</Card.Link>
 							</Card.Body>
 						</Card>

@@ -12,7 +12,7 @@ import {
 
 export const Navigation = () => {
 	return (
-		<nav class="hero" role="navigation">
+		<nav class="hero">
 			<Navbar collapseOnSelect expand="lg" variant="dark">
 				<Container>
 					<Navbar.Brand as={Link} to="/">

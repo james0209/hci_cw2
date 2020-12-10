@@ -21,6 +21,7 @@ export const Portal = () => {
 								variant="primary"
 								href="https://learn.uea.ac.uk/"
 								target="_blank"
+								rel="noreferrer"
 							>
 								Blackboard
 							</Button>{" "}
@@ -29,6 +30,7 @@ export const Portal = () => {
 								variant="primary"
 								href="https://evision.uea.ac.uk/"
 								target="_blank"
+								rel="noreferrer"
 							>
 								E:vision
 							</Button>{" "}

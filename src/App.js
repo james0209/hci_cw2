@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import { Portal } from "./Portal";
 import { Dashboard } from "./Dashboard";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
+import NotFound from "./NotFound";
 import "./App.css";
 
 function App() {
-	const [sidebarIsOpen, setSidebarOpen] = useState(true);
-	const toggleSidebar = () => setSidebarOpen(!sidebarIsOpen);
 	return (
-		<HashRouter basename="/">
-			<div className="App h-100">
+		<HashRouter>
+			<div className="App d-flex flex-column h-100">
 				<nav>
 					<Navigation></Navigation>
 				</nav>
@@ -22,7 +21,7 @@ function App() {
 					<Route path="/dashboard">
 						<Dashboard />
 					</Route>
-					<Route component={Portal} />
+					<Route component={NotFound} />
 				</Switch>
 			</div>
 			<Footer></Footer>
