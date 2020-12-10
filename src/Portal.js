@@ -1,8 +1,6 @@
 import { Container } from "react-bootstrap";
-import { Navigation } from "./Navigation";
-import { Footer } from "./Footer";
 import { Col, Row, Button } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Portal = () => {
 	return (

@@ -1,6 +1,4 @@
-import logo from "./logo.svg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { IndexRoute } from "react-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import { Portal } from "./Portal";
 import { Dashboard } from "./Dashboard";
 import { Navigation } from "./Navigation";
@@ -9,8 +7,8 @@ import "./App.css";
 
 function App() {
 	return (
-		<Router>
-			<div className="App">
+		<HashRouter basename="/">
+			<div className="App h-100">
 				<nav>
 					<Navigation></Navigation>
 				</nav>
@@ -25,7 +23,7 @@ function App() {
 				</Switch>
 			</div>
 			<Footer></Footer>
-		</Router>
+		</HashRouter>
 	);
 }
 
