@@ -1,5 +1,4 @@
 import { Card, CardDeck, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 export const Dashboard = () => {
 	return (
@@ -80,7 +79,7 @@ export const Dashboard = () => {
 										Some quick example text to build on the card title and make
 										up the bulk of the card's content.
 									</Card.Text>
-									<Card.Link href="#">Card Link</Card.Link>
+									<Card.Link href="#">Read More</Card.Link>
 								</Card.Body>
 							</Card>
 							<Card style={{ width: "18rem" }} className="mx-auto">
@@ -93,7 +92,7 @@ export const Dashboard = () => {
 										Some quick example text to build on the card title and make
 										up the bulk of the card's content.
 									</Card.Text>
-									<Card.Link href="#">Card Link</Card.Link>
+									<Card.Link href="#">Read More</Card.Link>
 								</Card.Body>
 							</Card>
 							<Card style={{ width: "18rem" }} className="mx-auto">
@@ -106,7 +105,7 @@ export const Dashboard = () => {
 										Some quick example text to build on the card title and make
 										up the bulk of the card's content.
 									</Card.Text>
-									<Card.Link href="#">Card Link</Card.Link>
+									<Card.Link href="#">Read More</Card.Link>
 								</Card.Body>
 							</Card>
 						</CardDeck>

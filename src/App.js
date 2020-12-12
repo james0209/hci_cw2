@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import { Portal } from "./Portal";
 import { Dashboard } from "./Dashboard";
-import { Navigation } from "./Navigation";
+import Navigation from "./Navigation";
 import { Footer } from "./Footer";
 import NotFound from "./NotFound";
 import "./App.css";

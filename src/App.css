@@ -8,7 +8,10 @@
 }
 
 .content {
-	margin-top: 150px;
+	margin-top: 80px;
+}
+.content > h3 {
+	margin-bottom: 30px;
 }
 
 p {
@@ -24,15 +27,27 @@ p {
 .nav-link:hover {
 	color: #00aef0 !important;
 }
+.navbar-brand {
+	color: aliceblue !important;
+}
 .nav-link {
 	font-size: 20px;
 	color: aliceblue !important;
 	margin-left: 5px;
 }
+.fa-bars,
+.fa-search {
+	color: white;
+}
+.navbar-toggler-icon,
+MDBNavbarToggler,
+.navbar-toggler {
+	color: aliceblue !important;
+}
 
 /* Content */
 
-.content > .row > .col > .btn {
+.content > .row > .col-sm > .btn {
 	width: 60%;
 	margin-top: 10px;
 	margin-bottom: 10px;

@@ -7,16 +7,20 @@ export const Portal = () => {
 		<div class="hero">
 			<div>
 				<Container className="content">
+					<h1>WELCOME TO MY UEA</h1>
+					<h3>UEA's staff & student portal</h3>
 					<Row>
-						<Col>
+						<Col sm>
 							<h1>
 								<b>Staff and Students</b>
 							</h1>{" "}
 							<br></br>
+							<p>For direct access to My UEA</p>
 							<Button variant="primary" as={Link} to="/dashboard">
 								My UEA
 							</Button>{" "}
 							<br></br>
+							<p>For direct access to UEA's Learning Portal</p>
 							<Button
 								variant="primary"
 								href="https://learn.uea.ac.uk/"
@@ -35,19 +39,25 @@ export const Portal = () => {
 								E:vision
 							</Button>{" "}
 						</Col>
-						<Col>
+						<Col sm>
 							<h1>
 								<b>Academics</b>
 							</h1>{" "}
 							<br></br>
+							<p>Including CCN, UoS, NRP Institues and NNUH</p>
 							<Button variant="primary">Register</Button> <br></br>
+							<p>Already registered?</p>
 							<Button variant="primary">Login</Button> <br></br>{" "}
 						</Col>
-						<Col>
+						<Col sm>
 							<h1>
 								<b>Guests</b>
 							</h1>{" "}
 							<br></br>
+							<p>
+								If you don't have a UEA account, the following pages on our
+								public website may be helpful.
+							</p>
 							<Button variant="primary">New Students</Button> <br></br>
 							<Button variant="primary">Library and Archives</Button> <br></br>
 							<Button variant="primary">Information for Visitors</Button>{" "}
