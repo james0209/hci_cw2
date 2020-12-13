@@ -75,13 +75,21 @@ class Navigation extends Component {
 							</MDBNavItem> */}
 							<MDBNavbarNav left>
 								<MDBNavItem active>
-									<MDBNavLink as={Link} to="/dashboard">
+									<MDBNavLink
+										as={Link}
+										to="/"
+										onClick={this.toggleCollapse("navbarCollapse1")}
+									>
 										Home
 									</MDBNavLink>
 								</MDBNavItem>
 								<MDBNavItem>
-									<MDBNavLink as={Link} to="/dashboard">
-										Profile
+									<MDBNavLink
+										as={Link}
+										to="/dashboard"
+										onClick={this.toggleCollapse("navbarCollapse1")}
+									>
+										Dashboard
 									</MDBNavLink>
 								</MDBNavItem>
 							</MDBNavbarNav>
