@@ -57,6 +57,15 @@ MDBNavbarToggler,
 	text-align: center;
 }
 
+.breadcrumb {
+	background-color: white !important;
+}
+
+.twitterborder {
+	width: 100%;
+	float: right;
+}
+
 /* Footer */
 
 /* .footer {
