@@ -5,6 +5,7 @@ import { Dashboard } from "./Dashboard";
 import Navigation from "./Navigation";
 import { Footer } from "./Footer";
 import NotFound from "./NotFound";
+import Sidebar from "./Sidebar";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 			<div className="App d-flex flex-column h-100">
 				<nav>
 					<Navigation></Navigation>
+					<Sidebar></Sidebar>
 				</nav>
 				<Switch>
 					<Route exact path="/">
