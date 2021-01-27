@@ -29,7 +29,7 @@ class Navigation extends Component {
 					<Container>
 						<Navbar.Brand as={Link} to="/">
 							<img
-								alt=""
+								alt="UEA Logo"
 								src="./uea_logo.png"
 								width="30"
 								height="30"
@@ -41,6 +41,8 @@ class Navigation extends Component {
 							className="navbar-toggler ml-auto"
 							type="button"
 							onClick={this.toggleCollapse("navbarCollapse1")}
+							alt="Search"
+							role="search"
 						>
 							<FontAwesomeIcon icon={faSearch} />
 						</Button>
@@ -49,6 +51,8 @@ class Navigation extends Component {
 							className="navbar-toggler"
 							type="button"
 							onClick={this.toggleCollapse("navbarCollapse1")}
+							alt="Menu"
+							role="navigation"
 						>
 							<FontAwesomeIcon icon={faBars} />
 						</Button>
