@@ -10,6 +10,7 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Timeline } from "react-twitter-widgets";
+import "./App.css";
 
 export const Dashboard = () => {
 	return (
@@ -105,7 +106,7 @@ export const Dashboard = () => {
 								<Card.Text>
 									Use the library search tools, or access your account
 								</Card.Text>
-								<Card.Link href="#">Library</Card.Link>
+								<Card.Link href="#">My Library</Card.Link>
 							</Card.Body>
 						</Card>
 					</div>
@@ -142,15 +143,15 @@ export const Dashboard = () => {
 								<Card style={{ width: "18rem" }} bg={"info"} text={"white"}>
 									<Card.Body>
 										<Card.Title>COVID-19 Update</Card.Title>
-										<Card.Subtitle className="mb-2 text-muted">
-											25 Jan 2021
-										</Card.Subtitle>
+										<Card.Subtitle className="mb-2">25 Jan 2021</Card.Subtitle>
 										<Card.Text>
 											Please read for latest updates on COVID-19 including case
 											numbers, a reminder on safety measures and how the
 											University is supporting self-isolating students.
 										</Card.Text>
-										<Card.Link href="#">Read More</Card.Link>
+										<Card.Link href="#" className="coloured-link">
+											Read More
+										</Card.Link>
 									</Card.Body>
 								</Card>
 								<Card style={{ width: "18rem" }} bg={"info"} text={"white"}>
@@ -158,29 +159,29 @@ export const Dashboard = () => {
 										<Card.Title>
 											UEA study most talked about climate research of 2020
 										</Card.Title>
-										<Card.Subtitle className="mb-2 text-muted">
-											18 Jan 2021
-										</Card.Subtitle>
+										<Card.Subtitle className="mb-2">18 Jan 2021</Card.Subtitle>
 										<Card.Text>
 											A study by Prof Corinne Le Quéré, highlighting the effects
 											of lockdown on carbon emissions, was the world’s most
 											talked about climate study from 2020.
 										</Card.Text>
-										<Card.Link href="#">Read More</Card.Link>
+										<Card.Link href="#" className="coloured-link">
+											Read More
+										</Card.Link>
 									</Card.Body>
 								</Card>
 								<Card style={{ width: "18rem" }} bg={"info"} text={"white"}>
 									<Card.Body>
 										<Card.Title>Spotlight On Careers Central</Card.Title>
-										<Card.Subtitle className="mb-2 text-muted">
-											19 Jan 2021
-										</Card.Subtitle>
+										<Card.Subtitle className="mb-2">19 Jan 2021</Card.Subtitle>
 										<Card.Text>
 											In this week's Spotlight On, Jen Lloyd who is Career
 											Central's Marketing and Events Officer, explains how the
 											service has continued to support students in spite...
 										</Card.Text>
-										<Card.Link href="#">Read More</Card.Link>
+										<Card.Link href="#" className="coloured-link">
+											Read More
+										</Card.Link>
 									</Card.Body>
 								</Card>
 							</CardDeck>

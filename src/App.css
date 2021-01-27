@@ -61,6 +61,13 @@ MDBNavbarToggler,
 	background-color: white !important;
 }
 
+.card-subtitle,
+.coloured-link,
+card-subtitle,
+text-muted {
+	color: #ffbf00 !important;
+}
+
 .twitterborder {
 	width: 100%;
 	float: right;
