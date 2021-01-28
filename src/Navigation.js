@@ -55,18 +55,22 @@ class Navigation extends Component {
 							type="button"
 							onClick={this.toggleCollapseSearch("navbarCollapse2")}
 							alt="Search"
+							title="Search"
 							role="search"
 						>
-							<FontAwesomeIcon icon={faSearch} role="search" />
+							<FontAwesomeIcon icon={faSearch} role="search" alt="Search">
+								Search
+							</FontAwesomeIcon>
 						</Button>
 						<Button
 							className="navbar-toggler"
-							type="button"
+							type="submit"
 							onClick={this.toggleCollapseMenu("navbarCollapse1")}
 							alt="Menu"
+							title="Menu"
 							role="navigation"
 						>
-							<FontAwesomeIcon icon={faBars} role="menu" />
+							<FontAwesomeIcon icon={faBars} />
 						</Button>
 
 						<MDBCollapse
@@ -117,7 +121,7 @@ class Navigation extends Component {
 									</Button>
 								</Form>
 							</MDBNavItem> */}
-							<MDBNavbarNav left>
+							<MDBNavbarNav>
 								<MDBNavItem active>
 									<MDBNavLink
 										as={Link}

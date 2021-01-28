@@ -61,6 +61,11 @@ MDBNavbarToggler,
 	background-color: white !important;
 }
 
+.breadcrumb-item,
+.breadcrumb-item > a {
+	color: #0008f0;
+}
+
 .card-subtitle,
 .coloured-link,
 card-subtitle,
