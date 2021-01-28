@@ -49,7 +49,7 @@ MDBNavbarToggler,
 
 .content > .row > .col-sm > .btn {
 	width: 60%;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 	margin-bottom: 10px;
 }
 
@@ -68,9 +68,19 @@ text-muted {
 	color: #ffbf00 !important;
 }
 
+.bg-purple {
+	background-color: #4527a0 !important;
+}
+
 .twitterborder {
 	width: 100%;
 	float: right;
+}
+
+.btn-search {
+	color: white !important;
+	border: 2px solid white !important;
+	border-color: white !important;
 }
 
 /* Footer */

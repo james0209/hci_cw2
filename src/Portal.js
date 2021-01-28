@@ -8,7 +8,7 @@ export const Portal = () => {
 			<div>
 				<Container className="content">
 					<h1>WELCOME TO MY UEA</h1>
-					<h2>UEA's staff & student portal</h2>
+					<h2>UEA's Staff & Student portal</h2>
 					<Row>
 						<Col sm>
 							<h1>

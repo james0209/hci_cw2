@@ -140,7 +140,11 @@ export const Dashboard = () => {
 						</Card.Header>
 						<Card.Body>
 							<CardDeck>
-								<Card style={{ width: "18rem" }} bg={"info"} text={"white"}>
+								<Card
+									style={{ width: "18rem" }}
+									text={"white"}
+									className="bg-purple"
+								>
 									<Card.Body>
 										<Card.Title>COVID-19 Update</Card.Title>
 										<Card.Subtitle className="mb-2">25 Jan 2021</Card.Subtitle>
@@ -154,7 +158,11 @@ export const Dashboard = () => {
 										</Card.Link>
 									</Card.Body>
 								</Card>
-								<Card style={{ width: "18rem" }} bg={"info"} text={"white"}>
+								<Card
+									style={{ width: "18rem" }}
+									text={"white"}
+									className="bg-purple"
+								>
 									<Card.Body>
 										<Card.Title>
 											UEA study most talked about climate research of 2020
@@ -170,7 +178,11 @@ export const Dashboard = () => {
 										</Card.Link>
 									</Card.Body>
 								</Card>
-								<Card style={{ width: "18rem" }} bg={"info"} text={"white"}>
+								<Card
+									style={{ width: "18rem" }}
+									text={"white"}
+									className="bg-purple"
+								>
 									<Card.Body>
 										<Card.Title>Spotlight On Careers Central</Card.Title>
 										<Card.Subtitle className="mb-2">19 Jan 2021</Card.Subtitle>
