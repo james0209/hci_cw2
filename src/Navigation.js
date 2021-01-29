@@ -142,7 +142,7 @@ function Navigation() {
 									className="extra-buttons-nav"
 									as={Link}
 									to="/dashboard"
-									onClick={toggleMenu}
+									onClick={toggleModal}
 									// onClick={this.toggleCollapseMenu("navbarCollapse1")}
 								>
 									Post an Article
@@ -153,7 +153,7 @@ function Navigation() {
 									className="extra-buttons-nav"
 									as={Link}
 									to="/dashboard"
-									onClick={toggleMenu}
+									onClick={toggleToast}
 									// onClick={this.toggleCollapseMenu("navbarCollapse1")}
 								>
 									Post an Event

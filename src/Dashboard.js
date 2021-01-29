@@ -45,7 +45,7 @@ export const Dashboard = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							COVID-19 self isolation form
+							COVID-19 Self Isolation Form
 						</ListGroup.Item>
 						<ListGroup.Item
 							variant="info"
