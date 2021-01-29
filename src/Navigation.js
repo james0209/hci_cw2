@@ -136,7 +136,17 @@ function Navigation() {
 				</Container>
 			</MDBNavbar>
 
-			<Toast onClose={() => setShow(false)} show={show} delay={2000} autohide>
+			<Toast
+				onClose={() => setShow(false)}
+				show={show}
+				delay={2000}
+				autohide
+				style={{
+					position: "absolute",
+					top: 60,
+					right: 0,
+				}}
+			>
 				<Toast.Header>
 					<strong className="mr-auto">Error</strong>
 
