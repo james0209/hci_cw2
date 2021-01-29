@@ -1,6 +1,6 @@
 import { React, useState, Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Button, Toast } from "react-bootstrap";
+import { Navbar, Container, Button, Toast, Modal } from "react-bootstrap";
 import {
 	MDBNavbar,
 	MDBNavbarNav,
@@ -21,11 +21,14 @@ import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navigation() {
-	const [show, setShow] = useState(false);
+	const [showToast, setShowToast] = useState(false);
 	const [collapseIDMenu, setShowMenu] = useState(false);
 	const [collapseIDSearch, setShowSearch] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 	const toggleSearch = () => setShowSearch(!collapseIDSearch);
 	const toggleMenu = () => setShowMenu(!collapseIDMenu);
+	const toggleModal = () => setShowModal(!showModal);
+	const toggleToast = () => setShowToast(!showToast);
 
 	return (
 		<nav class="hero">
@@ -41,10 +44,10 @@ function Navigation() {
 						/>{" "}
 						MY UEA
 					</Navbar.Brand>
-					<MDBBtn outline className="ml-auto" onClick={() => setShow(true)}>
+					<MDBBtn outline className="ml-auto" onClick={toggleModal}>
 						Post an Article
 					</MDBBtn>
-					<MDBBtn outline className="ml-auto" onClick={() => setShow(true)}>
+					<MDBBtn outline className="ml-auto" onClick={toggleToast}>
 						Post an Event
 					</MDBBtn>
 					<Button
@@ -87,6 +90,7 @@ function Navigation() {
 									size="sm"
 									type="submit"
 									// onClick={this.toggleCollapseSearch("navbarCollapse2")}
+									onClick={toggleMenu}
 									className="mr-auto btn-search"
 								>
 									Search
@@ -117,6 +121,7 @@ function Navigation() {
 								<MDBNavLink
 									as={Link}
 									to="/"
+									onClick={toggleMenu}
 									// onClick={this.toggleCollapseMenu("navbarCollapse1")}
 								>
 									Home
@@ -126,6 +131,7 @@ function Navigation() {
 								<MDBNavLink
 									as={Link}
 									to="/dashboard"
+									onClick={toggleMenu}
 									// onClick={this.toggleCollapseMenu("navbarCollapse1")}
 								>
 									Dashboard
@@ -137,8 +143,8 @@ function Navigation() {
 			</MDBNavbar>
 
 			<Toast
-				onClose={() => setShow(false)}
-				show={show}
+				onClose={toggleToast}
+				show={showToast}
 				delay={2000}
 				autohide
 				style={{
@@ -157,6 +163,25 @@ function Navigation() {
 					You need to be logged in to access this functionality.
 				</Toast.Body>
 			</Toast>
+
+			<Modal show={showModal} onHide={toggleModal}>
+				<Modal.Header closeButton>
+					<Modal.Title>Post an Article</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					This is the modal that would open where users can create an article if
+					they have the correct permissions. Keeps the user on the same page for
+					mapping.
+				</Modal.Body>
+				<Modal.Footer>
+					<Button variant="secondary" onClick={toggleModal}>
+						Close
+					</Button>
+					<Button variant="primary" onClick={toggleModal}>
+						Save Changes
+					</Button>
+				</Modal.Footer>
+			</Modal>
 		</nav>
 	);
 }
