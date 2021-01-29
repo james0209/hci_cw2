@@ -52,6 +52,21 @@ MDBNavbarToggler,
 	font-size: 0.75rem !important;
 }
 
+.extra-buttons {
+	display: inline-block;
+	margin-right: 10px;
+}
+@media (max-width: 767.98px) {
+	.extra-buttons {
+		display: none !important;
+	}
+}
+@media (min-width: 767.98px) {
+	.extra-buttons-nav {
+		display: none !important;
+	}
+}
+
 /* Content */
 
 .content > .row > .col-sm > .btn {

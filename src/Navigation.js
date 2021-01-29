@@ -44,10 +44,10 @@ function Navigation() {
 						/>{" "}
 						MY UEA
 					</Navbar.Brand>
-					<MDBBtn outline className="ml-auto" onClick={toggleModal}>
+					<MDBBtn outline className="extra-buttons" onClick={toggleModal}>
 						Post an Article
 					</MDBBtn>
-					<MDBBtn outline className="ml-auto" onClick={toggleToast}>
+					<MDBBtn outline className="extra-buttons" onClick={toggleToast}>
 						Post an Event
 					</MDBBtn>
 					<Button
@@ -135,6 +135,28 @@ function Navigation() {
 									// onClick={this.toggleCollapseMenu("navbarCollapse1")}
 								>
 									Dashboard
+								</MDBNavLink>
+							</MDBNavItem>
+							<MDBNavItem>
+								<MDBNavLink
+									className="extra-buttons-nav"
+									as={Link}
+									to="/dashboard"
+									onClick={toggleMenu}
+									// onClick={this.toggleCollapseMenu("navbarCollapse1")}
+								>
+									Post an Article
+								</MDBNavLink>
+							</MDBNavItem>
+							<MDBNavItem>
+								<MDBNavLink
+									className="extra-buttons-nav"
+									as={Link}
+									to="/dashboard"
+									onClick={toggleMenu}
+									// onClick={this.toggleCollapseMenu("navbarCollapse1")}
+								>
+									Post an Event
 								</MDBNavLink>
 							</MDBNavItem>
 						</MDBNavbarNav>
