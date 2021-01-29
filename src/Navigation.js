@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Button } from "react-bootstrap";
+import { Navbar, Container, Button, Toast } from "react-bootstrap";
 import {
 	MDBNavbar,
 	MDBNavbarNav,
@@ -11,6 +11,11 @@ import {
 	MDBInput,
 	MDBBtn,
 	MDBFormInline,
+	MDBContainer,
+	MDBModal,
+	MDBModalBody,
+	MDBModalHeader,
+	MDBModalFooter,
 } from "mdbreact";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,6 +24,7 @@ class Navigation extends Component {
 	state = {
 		collapseIDMenu: "",
 		collapseIDSearch: "",
+		showToast: "",
 	};
 
 	toggleCollapseMenu = (collapseIDMenu) => () => {
@@ -32,6 +38,12 @@ class Navigation extends Component {
 		this.setState((prevState) => ({
 			collapseIDSearch:
 				prevState.collapseIDSearch !== collapseIDSearch ? collapseIDSearch : "",
+		}));
+	};
+
+	toggleShowToast = (showToast) => () => {
+		this.setState((prevState) => ({
+			showToast: prevState.showToast !== showToast ? showToast : "",
 		}));
 	};
 
@@ -50,6 +62,12 @@ class Navigation extends Component {
 							/>{" "}
 							MY UEA
 						</Navbar.Brand>
+						<MDBBtn outline className="ml-auto">
+							Post an Article
+						</MDBBtn>
+						<MDBBtn outline className="ml-auto">
+							Post an Event
+						</MDBBtn>
 						<Button
 							className="navbar-toggler ml-auto"
 							type="button"

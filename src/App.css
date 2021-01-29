@@ -45,6 +45,12 @@ MDBNavbarToggler,
 	color: aliceblue !important;
 }
 
+.btn-outline-default {
+	color: white !important;
+	border: 2px solid black;
+	border-color: white !important;
+}
+
 /* Content */
 
 .content > .row > .col-sm > .btn {
