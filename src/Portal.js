@@ -7,8 +7,8 @@ export const Portal = () => {
 		<div class="hero">
 			<div>
 				<Container className="content">
-					<h1>WELCOME TO MY UEA</h1>
-					<h2>UEA's Staff & Student portal</h2>
+					<h1>WELCOME TO UEA PORTAL</h1>
+					<h3>UEA's Staff & Student portal</h3>
 					<Row>
 						<Col sm>
 							<h1>
@@ -17,7 +17,7 @@ export const Portal = () => {
 							<br></br>
 							<p>For direct access to My UEA</p>
 							<Button variant="primary" as={Link} to="/dashboard">
-								My UEA
+								Dashboard
 							</Button>{" "}
 							<br></br>
 							<p>For direct access to UEA's Learning Portal</p>
