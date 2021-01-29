@@ -52,6 +52,19 @@ MDBNavbarToggler,
 	font-size: 0.75rem !important;
 }
 
+.list-group-item-info {
+	background-color: #2cd576 !important;
+	color: #000000 !important;
+}
+.list-group-item-info > a {
+	color: white;
+}
+.list-group-item-info.list-group-item-action:focus,
+.list-group-item-info.list-group-item-action:hover {
+	background-color: #00de8b !important;
+	color: #000000 !important;
+}
+
 .extra-buttons {
 	display: inline-block;
 	margin-right: 10px;

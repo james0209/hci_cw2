@@ -57,9 +57,7 @@ export const Dashboard = () => {
 							COVID-19 Symptom Checklist
 						</ListGroup.Item>
 						<ListGroup.Item variant="info">
-							<a href="mailto:covidsecure@uea.ac.uk">
-								Email: covidsecure@uea.ac.uk
-							</a>
+							<a href="mailto:covidsecure@uea.ac.uk">covidsecure@uea.ac.uk</a>
 						</ListGroup.Item>
 					</ListGroup>
 				</div>
