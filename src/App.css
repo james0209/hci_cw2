@@ -127,3 +127,11 @@ text-muted {
 .footer-links > a:hover {
 	color: wheat;
 }
+
+.jumbotron,
+jumbotron {
+	background-color: white !important;
+	border: 2px solid black;
+	border-color: pink !important;
+	border-style: dotted;
+}

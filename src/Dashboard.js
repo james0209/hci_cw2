@@ -7,6 +7,7 @@ import {
 	Col,
 	ListGroup,
 	Tab,
+	Jumbotron,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Timeline } from "react-twitter-widgets";
@@ -201,6 +202,17 @@ export const Dashboard = () => {
 					</Card>
 				</div>
 			</div>
+
+			<div class="container" className="container">
+				<Jumbotron>
+					<h1>Customise your Widgets</h1>
+					<p>Click to start personalising your MyUEA page layout.</p>
+					<p>
+						<Button variant="primary">Customise</Button>
+					</p>
+				</Jumbotron>
+			</div>
+
 			<div class="container mt-3 mb-3">
 				<div class="row">
 					<div class="col">
