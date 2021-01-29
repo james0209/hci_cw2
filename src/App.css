@@ -49,6 +49,7 @@ MDBNavbarToggler,
 	color: white !important;
 	border: 2px solid black;
 	border-color: white !important;
+	font-size: 0.75rem !important;
 }
 
 /* Content */

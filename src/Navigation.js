@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Button, Toast } from "react-bootstrap";
+import { Navbar, Container, Button } from "react-bootstrap";
 import {
 	MDBNavbar,
 	MDBNavbarNav,
@@ -19,7 +19,6 @@ import {
 } from "mdbreact";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 class Navigation extends Component {
 	state = {
 		collapseIDMenu: "",
